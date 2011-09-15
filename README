@@ -1,0 +1,61 @@
+NAME
+    Lingua::EN::Number::Format::MixWithWords - Format number to a mixture of
+    numbers and words (e.g. 12.3 million)
+
+VERSION
+    version 0.01
+
+SYNOPSIS
+     use Lingua::EN::Number::Format::MixWithWords qw(format_number_mix);
+
+     print format_number_mix(num => 1.23e7); # prints "12.3 million"
+
+DESCRIPTION
+    This module formats number with English names of large numbers
+    (thousands, millions, billions, and so on), e.g. 1.23e7 becomes "12.3
+    million". If number is too small or too large so it does not have any
+    appropriate names, it will be formatted like a normal number.
+
+FUNCTIONS
+    None of the functions are exported by default, but they are exportable.
+
+  format_number_mix(%args) -> RESULT
+    Arguments ("*" denotes required arguments):
+
+    *   min_format* => *float* (default 1000000)
+
+        Number must be larger than this to be formatted as mixture of number
+        and word.
+
+    *   min_fraction* => *float* (default 1)
+
+        Whether smaller number can be formatted with 0,x.
+
+        If min_fraction is 1 (the default) or 0.9, 800000 won't be formatted
+        as 0.9 omillion but will be if min_fraction is 0.8.
+
+    *   num* => *float*
+
+        The input number to format.
+
+    *   num_decimal => *int*
+
+        Number of decimal points to round.
+
+        Can be negative, e.g. -1 to round to nearest 10, -2 to nearest 100,
+        and so on.
+
+SEE ALSO
+    Lingua::EN::Numbers
+
+    Number::Format
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2011 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
