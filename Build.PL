@@ -17,12 +17,13 @@ my %module_build_args = (
     'Steven Haryanto <stevenharyanto@gmail.com>'
   ],
   'dist_name' => 'Lingua-EN-Number-Format-MixWithWords',
-  'dist_version' => '0.01',
+  'dist_version' => '0.02',
   'license' => 'perl',
   'module_name' => 'Lingua::EN::Number::Format::MixWithWords',
   'recommends' => {},
   'recursive_test_files' => 1,
   'requires' => {
+    'Exporter::Lite' => '0',
     'Math::Round' => '0',
     'Number::Format' => '0',
     'Sub::Spec' => '1.0.2',

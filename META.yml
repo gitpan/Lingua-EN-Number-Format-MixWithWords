@@ -14,6 +14,7 @@ meta-spec:
   version: 1.4
 name: Lingua-EN-Number-Format-MixWithWords
 requires:
+  Exporter::Lite: 0
   Math::Round: 0
   Number::Format: 0
   Sub::Spec: 1.0.2
@@ -22,4 +23,4 @@ requires:
 resources:
   homepage: http://search.cpan.org/dist/Lingua-EN-Number-Format-MixWithWords/
   repository: http://github.com/sharyanto/Lingua-EN-Number-Format-MixWithWords
-version: 0.01
+version: 0.02

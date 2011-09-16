@@ -6,6 +6,7 @@ MANIFEST.SKIP
 META.yml
 README
 dist.ini
+lib/Lingua/Base/Number/Format/MixWithWords.pm
 lib/Lingua/EN/Number/Format/MixWithWords.pm
 t/00-compile.t
 t/01-basics.t
