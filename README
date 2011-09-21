@@ -3,7 +3,7 @@ NAME
     numbers and words (e.g. 12.3 million)
 
 VERSION
-    version 0.02
+    version 0.03
 
 SYNOPSIS
      use Lingua::EN::Number::Format::MixWithWords qw(format_number_mix);

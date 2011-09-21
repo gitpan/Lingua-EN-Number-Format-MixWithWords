@@ -17,10 +17,11 @@ requires:
   Exporter::Lite: 0
   Math::Round: 0
   Number::Format: 0
+  Package::Rename: 0
   Sub::Spec: 1.0.2
   Test::More: 0.96
   perl: 5.010000
 resources:
   homepage: http://search.cpan.org/dist/Lingua-EN-Number-Format-MixWithWords/
   repository: http://github.com/sharyanto/Lingua-EN-Number-Format-MixWithWords
-version: 0.02
+version: 0.03

@@ -11,7 +11,7 @@ use Exporter::Lite;
 
 our @EXPORT_OK = qw(format_number_mix);
 
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 our %SPEC;
 
@@ -145,7 +145,7 @@ Lingua::EN::Number::Format::MixWithWords - Format number to a mixture of numbers
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
