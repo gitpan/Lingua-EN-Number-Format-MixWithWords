@@ -11,7 +11,7 @@ use Exporter::Lite;
 
 our @EXPORT_OK = qw(format_number_mix);
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 our %SPEC;
 
@@ -145,7 +145,7 @@ Lingua::EN::Number::Format::MixWithWords - Format number to a mixture of numbers
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -171,15 +171,38 @@ Arguments (C<*> denotes required arguments):
 
 =over 4
 
-=item * B<min_format> => I<float>
+=item * B<min_format>* => I<float> (default C<1000000>)
 
-=item * B<min_fraction> => I<float>
+Number must be larger than this to be formatted as mixture of number and word.
 
-=item * B<num> => I<float>
+=item * B<min_fraction>* => I<float> (default C<1>)
+
+Whether smaller number can be formatted with 0,x.
+
+If min_fraction is 1 (the default) or 0.9, 800000 won't be formatted as 0.9
+omillion but will be if min_fraction is 0.8.
+
+=item * B<num>* => I<float>
+
+The input number to format.
 
 =item * B<num_decimal> => I<int>
 
-=item * B<scale> => I<str>
+Number of decimal points to round.
+
+Can be negative, e.g. -1 to round to nearest 10, -2 to nearest 100, and so on.
+
+=item * B<scale>* => I<str>
+
+Value must be one of:
+
+ ["short", "long"]
+
+
+Pick long or short scale names.
+
+See http://en.wikipedia.org/wiki/Long_scale#Long_scale_countries_and_languages
+for details.
 
 =back
 

@@ -3,7 +3,7 @@ NAME
     numbers and words (e.g. 12.3 million)
 
 VERSION
-    version 0.03
+    version 0.04
 
 SYNOPSIS
      use Lingua::EN::Number::Format::MixWithWords qw(format_number_mix);
@@ -22,15 +22,40 @@ FUNCTIONS
   format_number_mix(%args) -> RESULT
     Arguments ("*" denotes required arguments):
 
-    *   min_format => *float*
+    *   min_format* => *float* (default 1000000)
 
-    *   min_fraction => *float*
+        Number must be larger than this to be formatted as mixture of number
+        and word.
 
-    *   num => *float*
+    *   min_fraction* => *float* (default 1)
+
+        Whether smaller number can be formatted with 0,x.
+
+        If min_fraction is 1 (the default) or 0.9, 800000 won't be formatted
+        as 0.9 omillion but will be if min_fraction is 0.8.
+
+    *   num* => *float*
+
+        The input number to format.
 
     *   num_decimal => *int*
 
-    *   scale => *str*
+        Number of decimal points to round.
+
+        Can be negative, e.g. -1 to round to nearest 10, -2 to nearest 100,
+        and so on.
+
+    *   scale* => *str*
+
+        Value must be one of:
+
+         ["short", "long"]
+
+        Pick long or short scale names.
+
+        See
+        http://en.wikipedia.org/wiki/Long_scale#Long_scale_countries_and_lan
+        guages for details.
 
 SEE ALSO
     Lingua::EN::Numbers

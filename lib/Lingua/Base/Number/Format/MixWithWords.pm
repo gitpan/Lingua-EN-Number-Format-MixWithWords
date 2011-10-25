@@ -8,7 +8,7 @@ use Math::Round qw(nearest);
 use Number::Format;
 use POSIX qw(floor ceil log10);
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 our %SPEC;
 
@@ -82,7 +82,7 @@ Lingua::Base::Number::Format::MixWithWords
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 
