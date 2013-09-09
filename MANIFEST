@@ -1,9 +1,10 @@
-Build.PL
 Changes
 LICENSE
 MANIFEST
 MANIFEST.SKIP
+META.json
 META.yml
+Makefile.PL
 README
 dist.ini
 lib/Lingua/Base/Number/Format/MixWithWords.pm
@@ -14,4 +15,5 @@ t/01-basics.t
 t/alias.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t
+t/release-rinci.t
 weaver.ini

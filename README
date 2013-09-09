@@ -3,7 +3,7 @@ NAME
     numbers and words (e.g. 12.3 million)
 
 VERSION
-    version 0.05
+    version 0.06
 
 SYNOPSIS
      use Lingua::EN::Number::Format::MixWithWords qw(format_number_mix);
@@ -19,28 +19,24 @@ DESCRIPTION
 FUNCTIONS
     None of the functions are exported by default, but they are exportable.
 
-SEE ALSO
-    Lingua::EN::Numbers
+    None are exported by default, but they are exportable.
 
-    Number::Format
-
-FUNCTIONS
-  format_number_mix(%args) -> [status, msg, result, meta]
+  format_number_mix(%args) -> any
     Arguments ('*' denotes required arguments):
 
-    *   min_format* => *float* (default: 1000000)
+    *   min_format => *float* (default: 1000000)
 
         Number must be larger than this to be formatted as mixture of number
         and word.
 
-    *   min_fraction* => *float* (default: 1)
+    *   min_fraction => *float* (default: 1)
 
         Whether smaller number can be formatted with 0,x.
 
-        If minfraction is 1 (the default) or 0.9, 800000 won't be formatted
-        as 0.9 omillion but will be if minfraction is 0.8.
+        If min*fraction is 1 (the default) or 0.9, 800000 won't be formatted
+        as 0.9 omillion but will be if min*fraction is 0.8.
 
-    *   num* => *float*
+    *   num => *float*
 
         The input number to format.
 
@@ -51,28 +47,26 @@ FUNCTIONS
         Can be negative, e.g. -1 to round to nearest 10, -2 to nearest 100,
         and so on.
 
-    *   scale* => *str*
+    *   scale => *str*
 
         Pick long or short scale names.
 
         See
-        http://en.wikipedia.org/wiki/Longscale#Longscalecountriesand_languag
-        es for details.
+        http://en.wikipedia.org/wiki/Long*scale#Long*scale*countries*and_lan
+        guages for details.
 
     Return value:
 
-    Returns an enveloped result (an array). First element (status) is an
-    integer containing HTTP status code (200 means OK, 4xx caller error, 5xx
-    function error). Second element (msg) is a string containing error
-    message, or 'OK' if status is 200. Third element (result) is optional,
-    the actual result. Fourth element (meta) is called result metadata and
-    is optional, a hash that contains extra information.
+SEE ALSO
+    Lingua::EN::Numbers
+
+    Number::Format
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2012 by Steven Haryanto.
+    This software is copyright (c) 2013 by Steven Haryanto.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

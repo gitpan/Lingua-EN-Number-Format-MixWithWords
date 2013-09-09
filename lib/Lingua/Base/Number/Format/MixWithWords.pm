@@ -8,7 +8,7 @@ use Math::Round qw(nearest);
 use Number::Format;
 use POSIX qw(floor ceil log10);
 
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 our %SPEC;
 
@@ -72,19 +72,23 @@ sub _format {
 }
 
 1;
+# ABSTRACT: Base class for Lingua::XX::Number::Format::MixWithWords
 
 __END__
+
 =pod
+
+=encoding utf-8
 
 =head1 NAME
 
-Lingua::Base::Number::Format::MixWithWords
+Lingua::Base::Number::Format::MixWithWords - Base class for Lingua::XX::Number::Format::MixWithWords
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
-=head1 FUNCTIONS
+=for Pod::Coverage ^(new)$
 
 =head1 AUTHOR
 
@@ -92,10 +96,16 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Steven Haryanto.
+This software is copyright (c) 2013 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
-=cut
+=head1 DESCRIPTION
 
+=head1 FUNCTIONS
+
+
+None are exported by default, but they are exportable.
+
+=cut
