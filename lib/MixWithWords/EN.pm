@@ -5,7 +5,7 @@ use Package::Rename qw(link_package);
 
 link_package "Lingua::EN::Number::Format::MixWithWords", "MixWithWords::EN";
 
-our $VERSION = '0.06'; # VERSION
+our $VERSION = '0.07'; # VERSION
 
 1;
 # ABSTRACT: Alias for Lingua::EN::Number::Format::MixWithWords
@@ -22,7 +22,7 @@ MixWithWords::EN - Alias for Lingua::EN::Number::Format::MixWithWords
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 AUTHOR
 

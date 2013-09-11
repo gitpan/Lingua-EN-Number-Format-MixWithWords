@@ -8,7 +8,7 @@ use Math::Round qw(nearest);
 use Number::Format;
 use POSIX qw(floor ceil log10);
 
-our $VERSION = '0.06'; # VERSION
+our $VERSION = '0.07'; # VERSION
 
 our %SPEC;
 
@@ -86,7 +86,7 @@ Lingua::Base::Number::Format::MixWithWords - Base class for Lingua::XX::Number::
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =for Pod::Coverage ^(new)$
 

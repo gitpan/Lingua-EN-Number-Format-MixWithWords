@@ -22,4 +22,4 @@ requires:
 resources:
   homepage: http://search.cpan.org/dist/Lingua-EN-Number-Format-MixWithWords/
   repository: http://github.com/sharyanto/Lingua-EN-Number-Format-MixWithWords
-version: 0.06
+version: 0.07
